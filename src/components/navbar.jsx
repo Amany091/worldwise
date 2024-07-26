@@ -7,6 +7,7 @@ import { User } from './context/users'
 const Navbaar = () => {
     const navigate = useNavigate()
     const { user } = useContext(User);
+    console.log(user)
   return (
           <Navbar expand="lg">
               <Container className='align-items-baseline position-relative'>
@@ -16,7 +17,7 @@ const Navbaar = () => {
                       <Nav className=' navy align-items-baseline py-3'>
                           <NavLink to={"/pricing"} className="text-unstyle text-light h5  text-decoration-none" > PRICING </NavLink>
                           <NavLink to={"/product"} className="mx-3 text-light h5 text-decoration-none" > PRODUCT </NavLink>
-                      {user ? 
+                      {Object.keys(user).length > 0 ? 
                           <Button variant='success fw-bold h5 w-100 mt-2' onClick={() => navigate("/login")} >SIGNOUT</Button> : 
                           <Button variant='success fw-bold h5 w-100 mt-2' onClick={()=> navigate("/login")} >LOGIN</Button>
                           }
