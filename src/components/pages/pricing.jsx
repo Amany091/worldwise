@@ -4,7 +4,6 @@ import Navbaar from '../navbar'
 const Princing = () => {
   return (
     <div className=' bg-dark overflow-hidden pricing position-relative '>
-            <Navbaar/>
             <div className='w-100 position-absolute' style={{ top: "20%", left:"20%"}}>
             <div className="row">
                 <div className="col-lg-4 col-md-6 col-sm-12">

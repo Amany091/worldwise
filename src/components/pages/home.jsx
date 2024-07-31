@@ -7,7 +7,6 @@ const Home = () => {
   const navigate = useNavigate()
   return (
       <div className='home'>
-      <Navbaar />
       <div className="container d-flex justify-content-center align-items-center flex-column h-75 ">
         <div className="home-title">
           <h1 className='text-center text-light'>You travel the world</h1>

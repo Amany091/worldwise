@@ -19,3 +19,7 @@
     right: 0;
   }
 }
+
+.navbar{
+  background-image: linear-gradient(rgba(36,42,45,.8), rgba(36,42,45,.8)) !important;
+}

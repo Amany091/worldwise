@@ -4,7 +4,6 @@ import Navbaar from '../navbar'
 const Product = () => {
     return (
         <div className=' bg-dark overflow-hidden product position-relative '>
-            <Navbaar/>
             <div className='w-100 position-absolute' style={{ top: "20%", left:"20%"}}>
             <div className="row">
                 <div className="col-lg-4 col-md-6 col-sm12 text-light d-flex justify-content-center flex-column">

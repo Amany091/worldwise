@@ -17,10 +17,12 @@ function App() {
   const [user, setUser] = useState({});
 
   return (
-    <div className="App">
+    <div className="App overflow-hidden">
+      
       <Users.Provider value={{ users, setUsers }}>
         <User.Provider value={{ user, setUser }}>
           <Router>
+          <Navbaar/>
             <ToastContainer/>
             <Routes>
               <Route exact path="/" element={<Home />} />

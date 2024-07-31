@@ -9,8 +9,8 @@ const Navbaar = () => {
     const { user } = useContext(User);
     console.log(user)
   return (
-          <Navbar expand="lg">
-              <Container className='align-items-baseline position-relative'>
+          <Navbar expand="lg" className='overflow-hidden w-100'>
+              <Container className='align-items-baseline position-relative '>
                   <NavLink to={'/'}><Navbar.Brand > <img src="https://worldwise-lemon.vercel.app/logo.png"  height={50} /> </Navbar.Brand></NavLink>
                   <Navbar.Toggle aria-controls="basic-navbar-nav" />
                   <Navbar.Collapse id="basic-navbar-nav">
